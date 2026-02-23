@@ -1,12 +1,135 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+:root {
+    --header-bg: #10375C;
+}
+
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
+
+/* ===============================common================================== */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2E80CE;
+    min-width: 205px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFF;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ==================================header================================ */
+
+.header {
+    background: var(--header-bg);
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__action--login,
+.navbar__link {
+    padding: 8px 21px;
+    color: #C9D2DA;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.header__action--login:hover,
+.navbar__link:hover,
+.navbar__link--active {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-shadow: 1px 0 0 currentColor;
+    color: #FFFFFF;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+    top: -3px;
+    right: 8px;
+}
+
+.header__action--signup {
+    min-width: 144px;
+    line-height: 44px;
+    font-size: 1.6rem;
+}
+
+.header__action--login {
+    margin-right: 7px;
+}
+
+/* ==================================hero===================== */
+.hero {
+    display: flex;
+    padding-top: 76px;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 7rem;
+    line-height: 80px;
+    letter-spacing: -2%;
+    color: #FFFFFF;
+}
+
+.hero__desc {
+    font-weight: 300;
+    font-style: Light;
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: #C9D2DA;
+    margin-top: 22px;
+}
+
+.hero__row {
+    padding-top: 38px;
+}
+
+.btn {}
