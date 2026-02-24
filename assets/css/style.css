@@ -45,8 +45,10 @@ a {
 
 .header {
     background: var(--header-bg);
-    min-height: 100vh;
+    /* hiển thị  chiều cao tối thiểu hiển thị trên màn hình*/
+    /* min-height: 100vh;   */
     padding-top: 30px;
+    padding-bottom: 110px;
 }
 
 .header-top {
