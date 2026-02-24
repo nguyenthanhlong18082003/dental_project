@@ -32,10 +32,7 @@ a {
     min-width: 205px;
     line-height: 60px;
     border-radius: 30px;
-    font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
-    line-height: 28px;
     text-align: center;
     color: #FFFF;
 }
@@ -108,13 +105,18 @@ a {
 .hero {
     display: flex;
     padding-top: 76px;
+    align-items: center;
+} 
+
+.hero__content{
+    width: 44%;
 }
 
 .hero__heading {
     font-weight: 600;
     font-style: SemiBold;
     font-size: 7rem;
-    line-height: 80px;
+    line-height: 1.14;
     letter-spacing: -2%;
     color: #FFFFFF;
 }
@@ -130,6 +132,41 @@ a {
 
 .hero__row {
     padding-top: 38px;
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
 }
 
-.btn {}
+.hero__phone{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero__media{
+    flex: 1;
+}
+
+.hero__image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img{
+    border-radius: 6px;
+    object-fit: over;
+}
+
+.hero__img--large{
+    width: 330px;
+    height: 540px;
+    margin-right: -6px;
+    z-index: 1;
+}
+
+.hero__img--small{
+    width: 210px;
+    height: 410px;
+}
