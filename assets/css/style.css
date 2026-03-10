@@ -127,7 +127,7 @@ a {
     font-weight: 300;
     font-style: Light;
     font-size: 1.8rem;
-    line-height: 30px;
+    line-height: 1.67;
     color: #C9D2DA;
     margin-top: 22px;
 }
@@ -172,3 +172,24 @@ a {
     width: 210px;
     height: 410px;
 }
+
+/* ====================service=============== */
+.service{
+    margin-top: 110px;
+}
+
+.service__heading{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #10375C;
+}
+
+.service__desc{
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}   
