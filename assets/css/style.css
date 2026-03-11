@@ -1,195 +1,223 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --header-bg: #10375C;
+  --header-bg: #10375c;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem;
-    font-family: "Sora", sans-serif;
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
 }
 
 /* ===============================common================================== */
 .container {
-    width: 1170px;
-    margin: 0 auto;
-    max-width: calc(100% - 48px);
+  width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100% - 48px);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    display: inline-block;
-    background-color: #2E80CE;
-    min-width: 205px;
-    line-height: 60px;
-    border-radius: 30px;
-    font-size: 16px;
-    text-align: center;
-    color: #FFFF;
+  display: inline-block;
+  background-color: #2e80ce;
+  min-width: 205px;
+  line-height: 60px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffff;
 }
 
 .btn:hover {
-    opacity: 0.9;
+  opacity: 0.9;
+}
+
+.section-heading {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #10375c;
+}
+
+.section-desc {
+  margin-top: 18px;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #575f66;
 }
 
 /* ==================================header================================ */
 
 .header {
-    background: var(--header-bg);
-    /* hiển thị  chiều cao tối thiểu hiển thị trên màn hình*/
-    /* min-height: 100vh;   */
-    padding-top: 30px;
-    padding-bottom: 110px;
+  background: var(--header-bg);
+  /* hiển thị  chiều cao tối thiểu hiển thị trên màn hình*/
+  /* min-height: 100vh;   */
+  padding-top: 30px;
+  padding-bottom: 110px;
 }
 
 .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar__list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header__action--login,
 .navbar__link {
-    padding: 8px 21px;
-    color: #C9D2DA;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.75;
+  padding: 8px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75;
 }
 
 .header__action--login:hover,
 .navbar__link:hover,
 .navbar__link--active {
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-    text-shadow: 1px 0 0 currentColor;
-    color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-shadow: 1px 0 0 currentColor;
+  color: #ffffff;
 }
 
 .navbar__link--active::before {
-    content: "";
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    position: relative;
-    top: -3px;
-    right: 8px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+  right: 8px;
 }
 
 .header__action--signup {
-    min-width: 144px;
-    line-height: 44px;
-    font-size: 1.6rem;
+  min-width: 144px;
+  line-height: 44px;
+  font-size: 1.6rem;
 }
 
 .header__action--login {
-    margin-right: 7px;
+  margin-right: 7px;
 }
 
 /* ==================================hero===================== */
 .hero {
-    display: flex;
-    padding-top: 76px;
-    align-items: center;
-} 
+  display: flex;
+  padding: 76px 0px 110px;
+  align-items: center;
+}
 
-.hero__content{
-    width: 44%;
+.hero__content {
+  width: 44%;
 }
 
 .hero__heading {
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 7rem;
-    line-height: 1.14;
-    letter-spacing: -2%;
-    color: #FFFFFF;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 7rem;
+  line-height: 1.14;
+  letter-spacing: -2%;
+  color: #ffffff;
 }
 
 .hero__desc {
-    font-weight: 300;
-    font-style: Light;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #C9D2DA;
-    margin-top: 22px;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #c9d2da;
+  margin-top: 22px;
 }
 
 .hero__row {
-    padding-top: 38px;
-    display: flex;
-    align-items: center;
-    column-gap: 38px;
+  padding-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 38px;
 }
 
-.hero__phone{
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    color: #FFFFFF;
+.hero__phone {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.hero__media{
-    flex: 1;
+.hero__media {
+  flex: 1;
 }
 
-.hero__image{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.hero__image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.hero__img{
-    border-radius: 6px;
-    object-fit: over;
+.hero__img {
+  border-radius: 6px;
+  object-fit: over;
 }
 
-.hero__img--large{
-    width: 330px;
-    height: 540px;
-    margin-right: -6px;
-    z-index: 1;
+.hero__img--large {
+  width: 330px;
+  height: 540px;
+  margin-right: -6px;
+  z-index: 1;
 }
 
-.hero__img--small{
-    width: 210px;
-    height: 410px;
+.hero__img--small {
+  width: 210px;
+  height: 410px;
 }
 
 /* ====================service=============== */
-.service{
-    margin-top: 110px;
+.service {
+  padding: 170px 0px;
+  /* background-color: aqua; */
 }
 
-.service__heading{
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
-    color: #10375C;
+.service__heading,
+.service__desc {
+  text-align: center;
 }
 
-.service__desc{
-    margin-top: 18px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-}   
+.service__desc {
+  width: 468px;
+  margin: 0 auto;
+}
+
+.service__row {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;    
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.service__item{
+    display: flex;
+}
